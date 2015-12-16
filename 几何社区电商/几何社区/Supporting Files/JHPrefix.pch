@@ -1,0 +1,33 @@
+//
+//  JHPrefix.pch
+//  几何社区
+//
+//  Created by 颜 on 15/9/5.
+//  Copyright (c) 2015年 lmh. All rights reserved.
+//
+
+#ifndef _____JHPrefix_pch
+#define _____JHPrefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
+
+#ifdef __OBJC__
+#import "Define.h"
+#import <UIKit/UIKit.h>
+#import "JHBasicViewController.h"
+#import "JHBasicTableViewController.h"
+#import "AppDelegate.h"
+#import "MBProgressHUD.h"
+#import "MJRefresh.h"
+#import "MobClick.h"
+#endif
+
+//去除发布版本的打印
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif

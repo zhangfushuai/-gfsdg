@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChooseProvinceView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="eJ1-IN-EtR">
+                    <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="选择城市" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94U-38-N6H">
+                    <rect key="frame" x="259" y="31" width="83" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVY-VG-Sez">
+                    <rect key="frame" x="14" y="26" width="45" height="31"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.28235294117647058" green="0.30980392156862746" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="CancelBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="IP6-FK-jBF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="94U-38-N6H" secondAttribute="centerX" id="Co9-yy-tBU"/>
+                <constraint firstItem="eJ1-IN-EtR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="Gsg-ZH-DhB"/>
+                <constraint firstItem="eJ1-IN-EtR" firstAttribute="top" secondItem="bVY-VG-Sez" secondAttribute="bottom" constant="7" id="MNb-ec-ifW"/>
+                <constraint firstItem="bVY-VG-Sez" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="O67-ef-RVI"/>
+                <constraint firstAttribute="trailing" secondItem="eJ1-IN-EtR" secondAttribute="trailing" id="Txt-3E-SMc"/>
+                <constraint firstAttribute="bottom" secondItem="eJ1-IN-EtR" secondAttribute="bottom" id="Zc2-UT-izM"/>
+                <constraint firstItem="94U-38-N6H" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="31" id="fIf-XO-vHn"/>
+                <constraint firstItem="bVY-VG-Sez" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="26" id="gYR-rj-Vlw"/>
+                <constraint firstItem="eJ1-IN-EtR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rsY-rN-aBw"/>
+                <constraint firstItem="eJ1-IN-EtR" firstAttribute="top" secondItem="94U-38-N6H" secondAttribute="bottom" constant="12" id="srT-LP-V41"/>
+            </constraints>
+            <connections>
+                <outlet property="tableview" destination="eJ1-IN-EtR" id="3Ci-Pw-olh"/>
+            </connections>
+        </view>
+    </objects>
+</document>

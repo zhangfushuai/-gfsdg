@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChooseCityView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="75U-Ia-C0U">
+                    <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="选择城市" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqn-Xj-Iwo">
+                    <rect key="frame" x="258" y="31" width="83" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Km-JU-o44">
+                    <rect key="frame" x="14" y="26" width="45" height="31"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.28235294119999998" green="0.30980392159999998" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelBtnclick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Zyg-fU-Fad"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfl-HB-iLl">
+                    <rect key="frame" x="535" y="26" width="45" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" red="0.28235294119999998" green="0.30980392159999998" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="ConfirmAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="iP6-Hu-TD5"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1Km-JU-o44" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="1fs-1a-QDG"/>
+                <constraint firstAttribute="bottom" secondItem="75U-Ia-C0U" secondAttribute="bottom" id="3nb-QR-JfJ"/>
+                <constraint firstItem="75U-Ia-C0U" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="54Y-qv-ZHJ"/>
+                <constraint firstItem="Gfl-HB-iLl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="26" id="Dwk-Hn-NCP"/>
+                <constraint firstAttribute="trailing" secondItem="Gfl-HB-iLl" secondAttribute="trailing" constant="20" id="Dwq-YI-3hW"/>
+                <constraint firstItem="75U-Ia-C0U" firstAttribute="top" secondItem="qqn-Xj-Iwo" secondAttribute="bottom" constant="12" id="E0K-iH-OiO"/>
+                <constraint firstItem="qqn-Xj-Iwo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="31" id="EMs-RC-xOn"/>
+                <constraint firstItem="1Km-JU-o44" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="26" id="GHc-lu-XbI"/>
+                <constraint firstItem="75U-Ia-C0U" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UIF-RI-oxm"/>
+                <constraint firstItem="75U-Ia-C0U" firstAttribute="top" secondItem="1Km-JU-o44" secondAttribute="bottom" constant="7" id="V5j-n2-1ME"/>
+                <constraint firstAttribute="centerX" secondItem="qqn-Xj-Iwo" secondAttribute="centerX" id="VRj-Ep-TC2"/>
+                <constraint firstItem="75U-Ia-C0U" firstAttribute="top" secondItem="Gfl-HB-iLl" secondAttribute="bottom" constant="3" id="ZdZ-S6-baJ"/>
+                <constraint firstAttribute="trailing" secondItem="75U-Ia-C0U" secondAttribute="trailing" id="zen-4d-uHI"/>
+            </constraints>
+            <connections>
+                <outlet property="tableview" destination="75U-Ia-C0U" id="qKJ-7A-Ykb"/>
+            </connections>
+        </view>
+    </objects>
+</document>

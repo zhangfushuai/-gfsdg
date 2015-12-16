@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mycell" id="KGk-i7-Jjw" customClass="HomeMapAddressTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BH3-IL-by1">
+                        <rect key="frame" x="33" y="3" width="287" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="PFh-qg-mjx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="may1" translatesAutoresizingMaskIntoConstraints="NO" id="DeA-ee-wyo">
+                        <rect key="frame" x="8" y="11" width="17" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="17" id="88s-rU-pb7"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DeA-ee-wyo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="0K0-ZN-mBU"/>
+                    <constraint firstItem="BH3-IL-by1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="1Yi-i8-RbM"/>
+                    <constraint firstAttribute="bottom" secondItem="DeA-ee-wyo" secondAttribute="bottom" constant="11" id="ATM-ZV-hne"/>
+                    <constraint firstItem="DeA-ee-wyo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="ffd-l7-Yqb"/>
+                    <constraint firstItem="BH3-IL-by1" firstAttribute="leading" secondItem="DeA-ee-wyo" secondAttribute="trailing" constant="8" id="gbZ-ib-yF8"/>
+                    <constraint firstItem="BH3-IL-by1" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailing" id="giv-Ss-DM7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="label" destination="BH3-IL-by1" id="hZ6-zL-qrn"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="may1" width="9" height="12"/>
+    </resources>
+</document>

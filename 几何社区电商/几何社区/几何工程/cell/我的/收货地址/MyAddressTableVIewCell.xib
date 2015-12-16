@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mycell" rowHeight="64" id="au6-gq-b6P" customClass="MyAddressTableVIewCell">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="64"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="au6-gq-b6P" id="xuv-Qf-ke9">
+                <rect key="frame" x="0.0" y="0.0" width="325" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18503074357" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SjU-HD-aLd">
+                        <rect key="frame" x="171" y="8" width="146" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="146" id="78e-wN-KRe"/>
+                            <constraint firstAttribute="height" constant="15" id="DO6-So-48o"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SjU-HD-aLd" firstAttribute="top" secondItem="xuv-Qf-ke9" secondAttribute="top" constant="8" id="MYY-by-plh"/>
+                    <constraint firstItem="SjU-HD-aLd" firstAttribute="trailing" secondItem="xuv-Qf-ke9" secondAttribute="trailing" constant="-8" id="byV-hN-XwE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="phoneLabel" destination="SjU-HD-aLd" id="Gtz-T1-sjC"/>
+            </connections>
+            <point key="canvasLocation" x="505.5" y="342"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="103" id="KGk-i7-Jjw" customClass="ServiceCommentTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="服务评价" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrp-s3-jKP">
+                        <rect key="frame" x="12" y="6" width="68" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Jri-G8-bEX"/>
+                            <constraint firstAttribute="width" constant="68" id="buo-gK-QIs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="送货速度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2V-LW-UPu">
+                        <rect key="frame" x="12" y="40" width="68" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="9HM-oy-Dd1"/>
+                            <constraint firstAttribute="width" constant="68" id="KTR-Mf-Rph"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="服务态度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9JT-Mi-M4X">
+                        <rect key="frame" x="12" y="69" width="68" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="68" id="MoV-rt-vkp"/>
+                            <constraint firstAttribute="height" constant="21" id="twT-TE-HP7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIe-9R-hqQ">
+                        <rect key="frame" x="292" y="40" width="16" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="kFz-P4-oyy"/>
+                            <constraint firstAttribute="width" constant="16" id="mdJ-Qh-jfG"/>
+                        </constraints>
+                        <state key="normal" image="xx"/>
+                        <state key="selected" image="sx1"/>
+                        <connections>
+                            <action selector="speedComment:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="br8-Z0-Lkh"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmc-iQ-RJc">
+                        <rect key="frame" x="268" y="40" width="16" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="YJX-R4-Mp9"/>
+                            <constraint firstAttribute="width" constant="16" id="lwH-tp-p1R"/>
+                        </constraints>
+                        <state key="normal" image="xx"/>
+                        <state key="selected" image="sx1"/>
+                        <connections>
+                            <action selector="speedComment:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="BK9-4h-rDL"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wa3-8n-Tti">
+                        <rect key="frame" x="244" y="40" width="16" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="fc4-of-3ag"/>
+                            <constraint firstAttribute="height" constant="22" id="kQ0-i3-aRV"/>
+                        </constraints>
+                        <state key="normal" image="xx"/>
+                        <state key="selected" image="sx1"/>
+                        <connections>
+                            <action selector="speedComment:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Q4D-2H-sTx"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrC-mc-ojO">
+                        <rect key="frame" x="220" y="40" width="16" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="Ivp-Qy-P6r"/>
+                            <constraint firstAttribute="width" constant="16" id="eY0-gL-S78"/>
+                        </constraints>
+                        <state key="normal" image="xx"/>
+                        <state key="selected" image="sx1"/>
+                        <connections>
+                            <action selector="speedComment:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="1k1-Oe-pgX"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYU-Ed-MVu">
+                        <rect key="frame" x="196" y="40" width="16" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="gIl-O0-uo9"/>
+                            <constraint firstAttribute="height" constant="22" id="s4k-hj-yKe"/>
+                        </constraints>
+                        <state key="normal" image="xx"/>
+                        <state key="selected" image="sx1"/>
+                        <connections>
+                            <action selector="speedComment:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="9nv-Xi-0Z1"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhV-NW-sF9">
+                        <rect key="frame" x="292" y="68" width="16" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="MVN-bw-Jsm"/>
+                            <constraint firstAttribute="width" constant="16" id="Sgb-NK-jpc"/>
+                        </constraints>
+                        <state key="normal" image="xx"/>
+                        <state key="selected" image="sx1"/>
+                        <connections>
+                            <action selector="serviceComment:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vZx-GU-H0B"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mho-sX-mQE">
+                        <rect key="frame" x="268" y="68" width="16" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="9zK-Es-eHg"/>
+                            <constraint firstAttribute="height" constant="22" id="eHt-Vt-8ep"/>
+                        </constraints>
+                        <state key="normal" image="xx"/>
+                        <state key="selected" image="sx1"/>
+                        <connections>
+                            <action selector="serviceComment:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="pwu-np-jUU"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2EO-tG-Esg">
+                        <rect key="frame" x="244" y="68" width="16" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="gOY-hc-oKj"/>
+                            <constraint firstAttribute="height" constant="22" id="kXx-Li-92Y"/>
+                        </constraints>
+                        <state key="normal" image="xx"/>
+                        <state key="selected" image="sx1"/>
+                        <connections>
+                            <action selector="serviceComment:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="v7g-VO-UEt"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLD-N8-arc">
+                        <rect key="frame" x="220" y="68" width="16" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="0GF-AU-dET"/>
+                            <constraint firstAttribute="width" constant="16" id="QgA-as-DAS"/>
+                        </constraints>
+                        <state key="normal" image="xx"/>
+                        <state key="selected" image="sx1"/>
+                        <connections>
+                            <action selector="serviceComment:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="XNL-rZ-zmb"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6S-Oi-I59">
+                        <rect key="frame" x="196" y="68" width="16" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="GXU-mB-iOg"/>
+                            <constraint firstAttribute="width" constant="16" id="NQb-3j-VCz"/>
+                        </constraints>
+                        <state key="normal" image="xx"/>
+                        <state key="selected" image="sx1"/>
+                        <connections>
+                            <action selector="serviceComment:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="380-uu-PUn"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HLD-N8-arc" firstAttribute="leading" secondItem="R6S-Oi-I59" secondAttribute="trailing" constant="8" id="41H-xt-2fu"/>
+                    <constraint firstItem="qhV-NW-sF9" firstAttribute="leading" secondItem="Mho-sX-mQE" secondAttribute="trailing" constant="8" id="4ev-Z2-f04"/>
+                    <constraint firstAttribute="bottom" secondItem="Mho-sX-mQE" secondAttribute="bottom" constant="4" id="6zw-5L-tI3"/>
+                    <constraint firstItem="2EO-tG-Esg" firstAttribute="top" secondItem="wa3-8n-Tti" secondAttribute="bottom" constant="6" id="BeZ-Hp-h91"/>
+                    <constraint firstItem="qhV-NW-sF9" firstAttribute="top" secondItem="zIe-9R-hqQ" secondAttribute="bottom" constant="6" id="Bou-hz-Ggn"/>
+                    <constraint firstItem="Mho-sX-mQE" firstAttribute="top" secondItem="zmc-iQ-RJc" secondAttribute="bottom" constant="6" id="CKI-dZ-DUN"/>
+                    <constraint firstItem="9JT-Mi-M4X" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="EVJ-zZ-3HO"/>
+                    <constraint firstAttribute="bottom" secondItem="2EO-tG-Esg" secondAttribute="bottom" constant="4" id="Gdt-z1-A6x"/>
+                    <constraint firstItem="qrC-mc-ojO" firstAttribute="leading" secondItem="eYU-Ed-MVu" secondAttribute="trailing" constant="8" id="Ikc-gS-lau"/>
+                    <constraint firstItem="R6S-Oi-I59" firstAttribute="top" secondItem="eYU-Ed-MVu" secondAttribute="bottom" constant="6" id="Mvp-5v-Y1x"/>
+                    <constraint firstAttribute="bottom" secondItem="9JT-Mi-M4X" secondAttribute="bottom" constant="4" id="REp-tQ-WGW"/>
+                    <constraint firstItem="t2V-LW-UPu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="Rso-Va-Idb"/>
+                    <constraint firstItem="zrp-s3-jKP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="VgX-im-j6e"/>
+                    <constraint firstItem="2EO-tG-Esg" firstAttribute="leading" secondItem="HLD-N8-arc" secondAttribute="trailing" constant="8" id="YOe-xi-hDh"/>
+                    <constraint firstItem="9JT-Mi-M4X" firstAttribute="top" secondItem="t2V-LW-UPu" secondAttribute="bottom" constant="8" id="Ylj-pW-Xp6"/>
+                    <constraint firstAttribute="bottom" secondItem="R6S-Oi-I59" secondAttribute="bottom" constant="4" id="bRc-Se-vTf"/>
+                    <constraint firstItem="wa3-8n-Tti" firstAttribute="leading" secondItem="qrC-mc-ojO" secondAttribute="trailing" constant="8" id="bm5-i8-u4X"/>
+                    <constraint firstItem="Mho-sX-mQE" firstAttribute="leading" secondItem="2EO-tG-Esg" secondAttribute="trailing" constant="8" id="gCl-cR-SK6"/>
+                    <constraint firstItem="HLD-N8-arc" firstAttribute="top" secondItem="qrC-mc-ojO" secondAttribute="bottom" constant="6" id="gdy-Gx-UoL"/>
+                    <constraint firstItem="zIe-9R-hqQ" firstAttribute="leading" secondItem="zmc-iQ-RJc" secondAttribute="trailing" constant="8" id="jSn-B8-zDd"/>
+                    <constraint firstAttribute="bottom" secondItem="HLD-N8-arc" secondAttribute="bottom" constant="4" id="mQz-G4-yue"/>
+                    <constraint firstItem="zmc-iQ-RJc" firstAttribute="leading" secondItem="wa3-8n-Tti" secondAttribute="trailing" constant="8" id="oCA-52-OrJ"/>
+                    <constraint firstItem="zrp-s3-jKP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="p5v-9t-LCX"/>
+                    <constraint firstAttribute="trailing" secondItem="qhV-NW-sF9" secondAttribute="trailing" constant="12" id="reF-Eu-a0n"/>
+                    <constraint firstAttribute="trailing" secondItem="zIe-9R-hqQ" secondAttribute="trailing" constant="12" id="vf8-ui-o4V"/>
+                    <constraint firstAttribute="bottom" secondItem="qhV-NW-sF9" secondAttribute="bottom" constant="4" id="zWW-yN-6Zg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outletCollection property="speedComment" destination="eYU-Ed-MVu" id="7pL-M3-r3j"/>
+                <outletCollection property="speedComment" destination="qrC-mc-ojO" id="zrv-gj-k3t"/>
+                <outletCollection property="speedComment" destination="wa3-8n-Tti" id="fbE-ZL-VNB"/>
+                <outletCollection property="speedComment" destination="zmc-iQ-RJc" id="nbE-UQ-XK2"/>
+                <outletCollection property="speedComment" destination="zIe-9R-hqQ" id="RF5-wS-a3x"/>
+                <outletCollection property="attitudeComment" destination="R6S-Oi-I59" id="hiy-v9-hlG"/>
+                <outletCollection property="attitudeComment" destination="HLD-N8-arc" id="VBd-vj-Nsf"/>
+                <outletCollection property="attitudeComment" destination="2EO-tG-Esg" id="SB1-rm-4KF"/>
+                <outletCollection property="attitudeComment" destination="Mho-sX-mQE" id="vEe-8g-AfZ"/>
+                <outletCollection property="attitudeComment" destination="qhV-NW-sF9" id="pht-4U-m4T"/>
+            </connections>
+            <point key="canvasLocation" x="442" y="178.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sx1" width="16" height="16"/>
+        <image name="xx" width="16" height="16"/>
+    </resources>
+</document>

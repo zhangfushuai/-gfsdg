@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutUsViewController">
+            <connections>
+                <outlet property="lbl1" destination="kY6-jS-u5A" id="rB1-M0-TLe"/>
+                <outlet property="lbl2" destination="b1M-cv-FBk" id="RJh-Zy-0W0"/>
+                <outlet property="lbl3" destination="huo-OG-Zfu" id="jJo-AX-ar1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="深圳市对酒当歌电子商务有限公司" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kY6-jS-u5A">
+                    <rect key="frame" x="173" y="518" width="255" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="VyP-1h-UeV"/>
+                        <constraint firstAttribute="width" constant="255" id="czS-Vr-93l"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.33333333333333331" green="0.28235294117647058" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright©2014-2015 jiheshequ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1M-cv-FBk">
+                    <rect key="frame" x="173" y="541" width="255" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="255" id="DAC-KW-F1h"/>
+                        <constraint firstAttribute="height" constant="18" id="GBl-IS-Taf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="all right reserved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huo-OG-Zfu">
+                    <rect key="frame" x="173" y="562" width="255" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="255" id="jFJ-I4-NNY"/>
+                        <constraint firstAttribute="height" constant="18" id="tH8-nt-Ocg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="huo-OG-Zfu" secondAttribute="bottom" constant="20" id="2Y5-Ns-3sN"/>
+                <constraint firstItem="huo-OG-Zfu" firstAttribute="top" secondItem="b1M-cv-FBk" secondAttribute="bottom" constant="3" id="CPA-kG-JoZ"/>
+                <constraint firstItem="huo-OG-Zfu" firstAttribute="top" secondItem="b1M-cv-FBk" secondAttribute="bottom" constant="3" id="Vct-q7-CxC"/>
+                <constraint firstAttribute="centerX" secondItem="kY6-jS-u5A" secondAttribute="centerX" id="drT-FB-Ofy"/>
+                <constraint firstAttribute="centerX" secondItem="b1M-cv-FBk" secondAttribute="centerX" id="gRn-1u-6ig"/>
+                <constraint firstAttribute="centerX" secondItem="huo-OG-Zfu" secondAttribute="centerX" id="ozm-Mc-Ztx"/>
+                <constraint firstItem="b1M-cv-FBk" firstAttribute="top" secondItem="kY6-jS-u5A" secondAttribute="bottom" constant="8" id="yD2-w2-ulA"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

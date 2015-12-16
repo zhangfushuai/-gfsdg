@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GuideViewController">
+            <connections>
+                <outlet property="myScroll" destination="8g1-ho-CMU" id="pDg-iz-LpY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8g1-ho-CMU">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8g1-ho-CMU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4Zy-mN-Z5Z"/>
+                <constraint firstAttribute="trailing" secondItem="8g1-ho-CMU" secondAttribute="trailing" id="6n6-ZP-8PH"/>
+                <constraint firstAttribute="bottom" secondItem="8g1-ho-CMU" secondAttribute="bottom" id="FUu-c6-NJp"/>
+                <constraint firstItem="8g1-ho-CMU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QAq-lr-tLc"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

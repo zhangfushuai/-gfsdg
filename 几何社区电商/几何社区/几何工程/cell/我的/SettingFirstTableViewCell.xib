@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="76" id="KGk-i7-Jjw" customClass="SettingFirstTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iPo-ar-CTB">
+                        <rect key="frame" x="12" y="18" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="Vm0-4O-LtW"/>
+                            <constraint firstAttribute="height" constant="48" id="fhV-vk-ybX"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T00-0M-8o3">
+                        <rect key="frame" x="68" y="47" width="146" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="146" id="Ums-0b-qRu"/>
+                            <constraint firstAttribute="height" constant="12" id="hhT-ZM-g0A"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击登录" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHP-dL-4YY">
+                        <rect key="frame" x="68" y="25" width="137" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="Wzc-cb-67N"/>
+                            <constraint firstAttribute="width" constant="137" id="aE8-yp-prt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="T00-0M-8o3" secondAttribute="bottom" constant="16" id="8lY-je-eJ8"/>
+                    <constraint firstItem="iPo-ar-CTB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="EdH-pr-8v9"/>
+                    <constraint firstItem="hHP-dL-4YY" firstAttribute="leading" secondItem="iPo-ar-CTB" secondAttribute="trailing" constant="8" id="GvJ-6O-5hn"/>
+                    <constraint firstItem="T00-0M-8o3" firstAttribute="top" secondItem="hHP-dL-4YY" secondAttribute="bottom" constant="8" id="Pxc-oP-62U"/>
+                    <constraint firstAttribute="bottom" secondItem="iPo-ar-CTB" secondAttribute="bottom" constant="9" id="oVX-zV-3cK"/>
+                    <constraint firstItem="T00-0M-8o3" firstAttribute="leading" secondItem="iPo-ar-CTB" secondAttribute="trailing" constant="8" id="uPr-tO-SeX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nickname" destination="hHP-dL-4YY" id="RX3-yC-xjZ"/>
+                <outlet property="phonenum" destination="T00-0M-8o3" id="6Tz-Tj-3Be"/>
+                <outlet property="touxiang" destination="iPo-ar-CTB" id="LjD-zd-iYT"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
