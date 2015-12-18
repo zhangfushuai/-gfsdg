@@ -23,6 +23,8 @@
 static JHDataManager *instance = nil;
 @implementation JHDataManager
 
+
+
 - (id)init
 {
     if ((self = [super init])) {

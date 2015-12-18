@@ -110,6 +110,9 @@ typedef enum{
 - (void)useCouponWithCoupon:(NSString*)coupon;
 //使用优惠券   后台存了cookie
 
+
+
+
 -(void)getShareInfo;
 -(void)getShopFoodWithShopid:(NSString*)shopid andAreaid:(NSString*)areaid;
 //首页新增广告位数据
