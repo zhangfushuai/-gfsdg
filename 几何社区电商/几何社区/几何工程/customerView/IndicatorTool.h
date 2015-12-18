@@ -10,7 +10,7 @@
 #import "MBProgressHUD.h"
 
 @class IndicatorTool;
-
+//online
 @protocol IndicatorToolDelegate <NSObject>
 
 -(void)CancelIndicatorTool:(IndicatorTool *)indicatorTool;
