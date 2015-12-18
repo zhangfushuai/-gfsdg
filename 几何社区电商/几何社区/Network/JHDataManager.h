@@ -113,7 +113,7 @@ typedef enum{
 
 
 
--(void)getShareInfo;
+-(void)  getShareInfo;
 -(void)getShopFoodWithShopid:(NSString*)shopid andAreaid:(NSString*)areaid;
 //首页新增广告位数据
 -(void)getHomeNewBannerInfoWithurl:(NSString *)url;
